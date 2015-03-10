@@ -1,0 +1,8 @@
+- hosts: alf
+  roles:
+    - common
+    - java
+    - apache
+    - tomcat
+    - mysql
+    - alf

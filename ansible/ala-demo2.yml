@@ -1,0 +1,20 @@
+  hosts: ala-demo
+  roles:
+    - common
+    - java
+    - tomcat
+    - cassandra
+    - mysql
+    - apache
+    - nameindex
+    - solr
+    - logger-client
+    - biocache-db
+    - biocache-service
+    - { role: biocache-hub, biocache_hub: generic-hub }
+    - collectory
+    - sandbox
+    - biocache-cli
+    - nameindexer    
+    - logger-service
+    - demo

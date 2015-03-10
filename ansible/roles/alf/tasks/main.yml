@@ -1,0 +1,35 @@
+- include: ../../common/tasks/setfacts.yml
+  tags:
+    - alf
+
+#
+# WAR file deployment and virtual host configuration
+#
+- include: ../../apache_vhost/tasks/main.yml context_path='{{ alf_context_path }}' hostname='{{ alf_hostname }}'
+  tags:
+    - deploy
+    - apache_vhost
+    - alf
+
+- include: ../../tomcat_deploy/tasks/main.yml war_url='{{ alf_war_url }}' context_path='{{alf_context_path}}' hostname='{{ alf_hostname }}'
+  tags:
+    - deploy
+    - tomcat_vhost
+    - alf
+
+#
+# Database configuration items
+#
+- name: create database
+  mysql_db: name={{alf_db_name}} state=present
+  register: dbschema
+  tags:
+    - db
+    - alf
+
+- name: create DB user
+  mysql_user: name={{alf_db_username}} password={{ alf_db_password}} priv=*.*:ALL state=present
+  register: dbuser
+  tags:
+    - db
+    - alf

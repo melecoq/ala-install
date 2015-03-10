@@ -1,0 +1,7 @@
+# assets
+version: "???"
+artifactId: "alf"
+classifier: ''
+groupId: "au.org.ala"
+packaging: "war"
+alf_war_url: "{{maven_repo_ws_url}}"
