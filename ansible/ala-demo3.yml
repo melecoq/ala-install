@@ -1,4 +1,6 @@
 - hosts: ala-demo
+  remote_user: vagrant
+  sudo: yes
   roles:
     - common
     - java
