@@ -74,18 +74,26 @@ cassandra_listen_host = localhost
 collectory_db_host_address = localhost
 collectory_db_host = localhost
 
+biocache_service_hostname = 10.1.1.2
 biocache_service_url = http://10.1.1.2/biocache-service
 biocache_service_base_url = http://10.1.1.2
 biocache_service_context_path = /biocache-service
+userdetails_url=
 
 biocache_hub_url = http://10.1.1.2/generic-hub
 biocache_hub_base_url = http://10.1.1.2
 biocache_hub_context_path = /generic-hub 
+biocache_hub_hostname = 10.1.1.2
+auth_base_url =
+auth_cas_url = 
 
 collectory_url = http://10.1.1.2/collectory
 collectory_base_url = http://10.1.1.2
 collectory_context_path = /collectory
+collectory_app=
+collectory_hostname=10.1.1.2
 
+solr_hostname = 10.1.1.2
 solr_url = http://10.1.1.2/solr
 solr_base_url = http://10.1.1.2
 solr_context_path = /solr
@@ -134,19 +142,28 @@ collectory_db_host = localhost
 collectory_db_user = collectory
 collectory_db_password = password
 
+biocache_service_hostname = 10.1.1.2
 biocache_service_url = http://10.1.1.2/biocache-service
 biocache_service_base_url = http://10.1.1.2
 biocache_service_context_path = /biocache-service
 cache_logging_enabled=true
+userdetails_url=
+
 
 biocache_hub_url = http://10.1.1.2/generic-hub
 biocache_hub_base_url = http://10.1.1.2
 biocache_hub_context_path = /generic-hub 
+biocache_hub_hostname = 10.1.1.2
+auth_base_url = 
+auth_cas_url =
 
 collectory_url = http://10.1.1.2/collectory
 collectory_base_url = http://10.1.1.2
 collectory_context_path = /collectory
+collectory_app=
+collectory_hostname=10.1.1.2
 
+solr_hostname = 10.1.1.2
 solr_url = http://10.1.1.2/solr
 solr_base_url = http://10.1.1.2
 solr_context_path = /solr
